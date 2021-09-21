@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaloAI - Text to Speech</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech</h1>
+        <form>
+            <div class="voice-config flex-center">
+                <div>
+                    <label for="voice">Giọng đọc: </label>
+                    <select name="voice" id="voice-type">
+                        <option value="1">Nữ Miền Nam</option>
+                        <option value="2">Nữ Miền Bắc</option>
+                        <option value="3">Nam Miền Nam</option>
+                        <option value="4">Nam Miền Bắc</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="speed">Tốc độ đọc: </label>
+                    <select name="speed" id="voice-speed">
+                        <option value="0.8">Chậm</option>
+                        <option value="1" selected>Vừa</option>
+                        <option value="1.2">Nhanh</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <textarea name="input-field" id="input-field" cols="30" rows="10" placeholder="Bạn cần tớ nói gì ?"></textarea><br>
+            <div class="control flex-center">
+                <button id="speech-btn">Nói đi</button>
+                <button id="stop-btn">Dừng</button>
+            </div>
+        </form>
+        
+        <audio id="voice">
+        </audio>
+    </div>
+
+    
+</body>
+<script src="./app.js"></script>
+</html>

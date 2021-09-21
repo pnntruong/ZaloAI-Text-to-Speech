@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    margin: 2rem;
+}
+
+textarea{
+    height: 70vh;
+    width: 70vw;
+    padding: .5rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form > div {
+    display: flex;
+    flex-direction: row;
+    min-width: 70vw;
+}
+.voice-config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voice-config > div {
+    margin: 4px;
+}
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 1rem;
+    margin: 10px;
+    background: rgb(233, 230, 230);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(19, 18, 18);
+    cursor: pointer;
+}
