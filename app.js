@@ -16,7 +16,7 @@ speechBtn.onclick = (e) => {
   //Get speech
   fetch("https://api.zalo.ai/v1/tts/synthesize", {
     headers: {
-      Apikey: "uxsZKaxrXpkl2eZjzz8CjkF0Bu5h8WOa",
+      apikey: "uxsZKaxrXpkl2eZjzz8CjkF0Bu5h8WOa",
     },
     body: `input=${inputText}&speaker_id=${choseVoice}&speed=${speechSpeed}`,
     method: "POST",
